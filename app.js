@@ -72,4 +72,16 @@ function reverseString(str) {
   return str.split("").reverse().join("")
 }
 
+// SPLIT() string to array
+// REVERSE() reverse an array
+// JOIN() array to string
+
 console.log(reverseString("abc"))
+
+// Q9. Turn every element in an array into 0
+function convertToZeros(arr) {
+  // Converts every single element of an array into the right-hand side of the operation
+  return arr.map((elem) => 0)
+}
+
+console.log(convertToZeros([5, 16, 100]))
