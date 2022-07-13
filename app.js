@@ -66,3 +66,10 @@ function getMax(arr) {
 }
 
 console.log(getMax([12, -52, 47, 98, 33]))
+
+// Q8. Reverse a string
+function reverseString(str) {
+  return str.split("").reverse().join("")
+}
+
+console.log(reverseString("abc"))
