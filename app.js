@@ -101,3 +101,18 @@ function removeApples(arr) {
 }
 
 console.log(removeApples(["Banana", "Apple", "Orange", "Apple"]))
+
+// Q11. Filter out all the falsy values
+function filterOutFalsy(arr) {
+  // const newArr = []
+  // for (i = 0; i < arr.length; i++) {
+  //   if (arr[i]) {
+  //     newArr.push(arr[i])
+  //   }
+  // }
+  // return newArr
+
+  return arr.filter((elem) => !!elem === true)
+}
+
+console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]))
