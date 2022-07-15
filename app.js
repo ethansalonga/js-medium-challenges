@@ -85,3 +85,19 @@ function convertToZeros(arr) {
 }
 
 console.log(convertToZeros([5, 16, 100]))
+
+// Q10. Filter out all the apples
+function removeApples(arr) {
+  // const newArr = []
+  // for (i = 0; i < arr.length; i++) {
+  //   if (arr[i] !== "Apple") {
+  //     newArr.push(arr[i])
+  //   }
+  // }
+
+  // return newArr
+
+  return arr.filter((elem) => elem !== "Apple")
+}
+
+console.log(removeApples(["Banana", "Apple", "Orange", "Apple"]))
