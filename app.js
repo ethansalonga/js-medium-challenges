@@ -81,7 +81,7 @@ console.log(reverseString("abc"))
 // Q9. Turn every element in an array into 0
 function convertToZeros(arr) {
   // Converts every single element of an array into the right-hand side of the operation
-  return arr.map((elem) => 0)
+  return arr.map(elem => 0)
 }
 
 console.log(convertToZeros([5, 16, 100]))
@@ -97,7 +97,7 @@ function removeApples(arr) {
 
   // return newArr
 
-  return arr.filter((elem) => elem !== "Apple")
+  return arr.filter(elem => elem !== "Apple")
 }
 
 console.log(removeApples(["Banana", "Apple", "Orange", "Apple"]))
@@ -112,7 +112,14 @@ function filterOutFalsy(arr) {
   // }
   // return newArr
 
-  return arr.filter((elem) => !!elem === true)
+  return arr.filter(elem => !!elem === true)
 }
 
 console.log(filterOutFalsy(["", [], 0, null, undefined, "0"]))
+
+// Q12. Truthy to true, falsy to false
+function convertToBoolean(arr) {
+  return arr.map(elem => !!elem)
+}
+
+console.log(convertToBoolean([500, 0, "Ethan", "", []]))
